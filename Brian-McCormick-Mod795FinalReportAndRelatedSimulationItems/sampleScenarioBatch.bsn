@@ -1,0 +1,14 @@
+(scenario-batch
+   (use-logger-control True)
+   (logger-files-path  "..\logger_tapes") ;; path is relative to Logger executable.
+   (batch-list 
+      (batch 
+         (number-of-runs  30)
+         (random-number-seed 4) ;; use -1 (computer generated seed)  
+                                ;; or positive integer other than 1
+         (scenario-filename  "C:\Users\Owner\Desktop\scenario\MakLandMod795.scn")
+         (sms-filename  "..\data\simulationModelSets\EntityLevel.sms")
+         (simulation-run-duration 0 : 0 : 15 : 0.000000) ;; simulation time
+      )
+   )
+)
